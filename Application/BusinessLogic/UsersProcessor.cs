@@ -32,6 +32,7 @@ namespace Application.BusinessLogic
                         MiddleName = db.Reader.GetValue("MiddleName"),
                         LastName = db.Reader.GetValue("LastName"),
                         Email = db.Reader.GetValue("Email"),
+                        Contact = db.Reader.GetValue("ContactNumber"),
                         Username = db.Reader.GetValue("UserName"),
                         Status = db.Reader.GetValue("Status").AsInt() == 0 ? "active" : "inactive" 
                     };
